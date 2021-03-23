@@ -1,0 +1,23 @@
+*{
+margin:0;
+padding:0;
+/* background: url('/static/bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+form{
+    margin:1em 1em;
+    padding:2em 2em;
+}
+
+.pad{
+    border: 3px solid rgba(255, 99, 71, 0.2);
+ 
+}
+.jhankrut{
+  font-size: 16px;
+  height: 25px;
+  width: 250px;
+}

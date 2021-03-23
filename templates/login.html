@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>House Price Prediction</title> 
+    <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width", initial-scale=1>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+     <link href="global.css" type="text/css" rel="stylesheet">
+     <!-- Optional theme -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <!-- Latest compiled and minified JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<style>
+  .bg{background: url({{ url_for('static', filename='bg.jpg') }});
+    width: 100vw;
+    height: 100vh;
+  }
+
+  </style>
+<body>
+<div class="container-fluid bg">
+  <div class="row" style="margin-top: 10%">
+      <div class="col-md-4 col-sm-4 col-xs-12"></div>
+      <div class="col-md-4 col-sm-4 col-xs-12">
+
+        <form class="form-container"  method = "GET" action = "{{ url_for('main') }}" >
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label" style="color:#fff; font-size: large;"> Email </label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name= "uname" required>
+              <div id="emailHelp" style="color:#fff; font-size: large;"  class="form-text">We'll never share your email id with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" style="color:#fff; font-size: large;" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" name = "pass" required>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" style="color:#fff; font-size: large;" for="exampleCheck1">Remember me 
+              </label>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+          </form>    
+      </div>
+    </body>
+</html>

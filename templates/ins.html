@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+     
+{% block content %}
+
+
+
+
+<!-- <div class="container"> -->
+    <div class="row">
+        <div class="col">
+            {%for i in res1%}
+                    <br>
+                    <ul class="list-group">
+                        <li class="list-group-item"><b>Latitude:</b>{{i[0]}}</li>
+                        <li class="list-group-item"><b>Longtitude:</b>{{i[1]}}</li>
+                        <li class="list-group-item"><b>Address:</b>{{i[2]}}</li>
+                        
+                        <li class="list-group-item"><b>Suburb:</b>{{i[4]}}</li>
+                        <li class="list-group-item"><b>Property Manager:</b>{{i[5]}}</li>
+                        <li class="list-group-item"><b>Bedroom:</b>{{i[6]}}</li>
+                        <li class="list-group-item"><b>Bathroom:</b>{{i[7]}}</li>
+                        <li class="list-group-item"><b> Landsize of the property:</b>{{i[8]}}</li>
+                        <li class="list-group-item"><b>Building Area of property:</b>{{i[9]}}</li>
+                        <li class="list-group-item"><b>Parking Space:</b>{{i[10]}}</li>
+                        <li class="list-group-item"><b>Property Built in Year:</b>{{i[11]}}</li>
+                        <li class="list-group-item"><b>Property Type:</b>{{i[12]}}</li>
+                        <li class="list-group-item"><b>Actual Price:</b>{{i[3]}}</li>
+                        <li class="list-group-item"><b>Predicted Price:</b>{{i[13]}}</li>
+                        
+                    </ul>
+                    <br>
+                    {%endfor%}
+        </div>
+        <div class="col">
+            <!-- {% include "map.html" %} -->
+            {{map}}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
