@@ -1,5 +1,5 @@
 # melbourne-house-price-prediction-flask-web-app
-House Price Prediction Web App using Flask Framework
+House Price Prediction Web App using Flask Framework with sqlite
 
 A simple web app which show list of houses and their prices which can be predicted for future years.
 
